@@ -41,7 +41,7 @@ window.$docsify.plugins = [
 
            if (HTML.length || CSS.length || JS.length) {
             return html + '\n' +
-            '<form action="https://codepen.io/pen/define" method="POST" target="_blank">' + 
+            '<form id="demo" action="https://codepen.io/pen/define" method="POST" target="_blank">' + 
               '<input type="hidden" name="data" value=\'' + JSONstring + '\'>' + 
               '<p>Open in Codepen.io:</p>' + 
               '<input type="image" src="cp-arrow-right.svg" width="40" height="40" value="Open in Codepen.io" class="codepen-mover-button">' +
